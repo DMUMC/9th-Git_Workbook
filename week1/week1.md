@@ -22,4 +22,29 @@
 
 1. ```unmodified``` : 문자 뜻 그대로 변경사항이 없음을 의미합니다.
 2. ```modified``` : 위 문자와 반대로 변경사항이 있음을 의미합니다.
-3. ```staged``` : ```commit``` 전 어떤 파일을 ```commit``` 할 것인지 확인할 수 있습니다. 
+3. ```staged``` : ```commit``` 전 어떤 파일을 ```commit``` 할 것인지 확인할 수 있습니다.
+
+> 📌 **```staged```**?
+깃(Git)은 파일을 추적한다고 말씀드렸습니다.
+하지만, 추적하는 파일이 여러 개라면 어떤걸 추적해야 할까요?
+이러한 문제점을 헤결하기 위해 사용하는 것이 바로 ```staged``` 입니다!
+
+### 3️⃣ 커밋 후, 푸쉬까지!
+커밋(commit)하고 싶은 파일을 골라 커밋(commit)한 뒤에 푸쉬(push)까지 어떻게 할까요?
+
+```
+~ 9th-Git_Workbook % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.18 KiB | 1.18 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DMUMC/9th-Git_Workbook.git
+   00738fc..0287fb6  week1-Vex -> week1-Vex
+```
+
+저처럼 VSCode를 활용해 ```push``` 를 하시거나 깃이나 터미널 창을 열어 똑같이 명령어를 타이핑하여 브랜치에 올리시면 됩니다.
+
+```push``` 를 하시게 되면, 브랜치에 제가 지금까지 수정하고 작성한 내용들이 적용됩니다.
